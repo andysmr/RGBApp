@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet var blueSlider: UISlider!
     override func viewDidLoad() {
         super.viewDidLoad()
-        mainView.backgroundColor = UIColor(red: 100/255, green: 200/255, blue: 50/255, alpha: 1)
+        mainView.layer.cornerRadius = 20
         // Do any additional setup after loading the view.
     }
 
