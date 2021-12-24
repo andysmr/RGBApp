@@ -58,12 +58,21 @@
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="GXL-IW-QpY">
                                 <rect key="frame" x="138.5" y="321" width="261.5" height="31"/>
+                                <connections>
+                                    <action selector="redSliderActivation" destination="BYZ-38-t0r" eventType="valueChanged" id="5SX-rk-Lqk"/>
+                                </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="87m-qA-BdR">
                                 <rect key="frame" x="138.5" y="383" width="261.5" height="31"/>
+                                <connections>
+                                    <action selector="greenSliderActivation" destination="BYZ-38-t0r" eventType="valueChanged" id="f1A-O1-nhi"/>
+                                </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="GAB-vS-OmF">
                                 <rect key="frame" x="138.5" y="445" width="261.5" height="31"/>
+                                <connections>
+                                    <action selector="blueSliderActivation" destination="BYZ-38-t0r" eventType="valueChanged" id="jFL-08-dfK"/>
+                                </connections>
                             </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

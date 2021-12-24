@@ -17,9 +17,21 @@ class ViewController: UIViewController {
     @IBOutlet var blueSlider: UISlider!
     override func viewDidLoad() {
         super.viewDidLoad()
+        mainView.backgroundColor = UIColor(red: 100/255, green: 200/255, blue: 50/255, alpha: 1)
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func redSliderActivation() {
+        redNumber.text = String(Int(redSlider.value))
+        mainView.backgroundColor = UIColor(red: CGFloat(Int(redSlider.value))/255, green: CGFloat(Int(greenSlider.value))/255, blue: CGFloat(Int(blueSlider.value))/255, alpha: 1)
+    }
+    @IBAction func greenSliderActivation() {
+        greenNumber.text = String(Int(greenSlider.value))
+        mainView.backgroundColor = UIColor(red: CGFloat(Int(redSlider.value))/255, green: CGFloat(Int(greenSlider.value))/255, blue: CGFloat(Int(blueSlider.value))/255, alpha: 1)
+    }
+    @IBAction func blueSliderActivation() {
+        blueNumber.text = String(Int(blueSlider.value))
+        mainView.backgroundColor = UIColor(red: CGFloat(Int(redSlider.value))/255, green: CGFloat(Int(greenSlider.value))/255, blue: CGFloat(Int(blueSlider.value))/255, alpha: 1)
+    }
 }
 
