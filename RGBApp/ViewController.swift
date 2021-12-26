@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet var redSlider: UISlider!
     @IBOutlet var greenSlider: UISlider!
     @IBOutlet var blueSlider: UISlider!
+    @IBOutlet var resetButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         mainView.layer.cornerRadius = 20
@@ -23,6 +25,7 @@ class ViewController: UIViewController {
         greenSlider.thumbTintColor = .systemGray4
         blueSlider.minimumTrackTintColor = .blue
         blueSlider.thumbTintColor = .systemGray4
+        resetButton.layer.cornerRadius = 10
         // Do any additional setup after loading the view.
     }
     func colorView() {
@@ -40,6 +43,16 @@ class ViewController: UIViewController {
     @IBAction func blueSliderActivation() {
         blueNumber.text = String(Int(blueSlider.value))
         colorView()
+    }
+    
+    @IBAction func resetView() {
+        mainView.backgroundColor = .black
+        redSlider.value = 0
+        greenSlider.value = 0
+        blueSlider.value = 0
+        redNumber.text = "0"
+        greenNumber.text = "0"
+        blueNumber.text = "0"
     }
 }
 
